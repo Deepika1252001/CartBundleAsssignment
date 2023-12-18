@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>bundle & save </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container-box">
+        <div class="box-header">
+            <hr>
+            <h3>Bundle & Save</h3>
+            <hr>
+        </div>
+        <div onclick="boxEventHandler(event,'first-box-pair')" id="first-box-pair" class="box-item">
+            <section>
+                <input id="first-pair" type="radio">
+                <div class="pair-text">
+                    <p>1 Pair</p>
+                    <p>DDK 195.00</p>
+                </div>
+                <div>
+                    <p class="fifty-percent-off">50% OFF</p>
+                </div>
+            </section>
+            <section class="second-section">
+                <div>
+                    <p></p>
+                    <p>#1</p>
+                    <p>#2</p>
+                </div>
+                <div>
+                    <p>Size</p>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>S</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="firstSizeHandler(event)">
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                            <p>XL</p>
+                            <p>XXL</p>
+                        </div>
+                    </div>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>S</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="secondSizeHandler(event)">
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                            <p>XL</p>
+                            <p>XXL</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Colour</p>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>Colour</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="firstColorHandler(event)">
+                            <p>Red <span class="red-sub-menu"></span></p>
+                            <p>Blue <span class="blue-sub-menu"></span></p>
+                            <p>Navy <span class="navy-sub-menu"></span></p>
+                            <p>Olive <span class="olive-sub-menu"></span></p>
+                        </div>
+                    </div>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>Colour</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="secondColorHandler(event)">
+                            <p>Red <span class="red-sub-menu"></span></p>
+                            <p>Blue <span class="blue-sub-menu"></span></p>
+                            <p>Navy <span class="navy-sub-menu"></span></p>
+                            <p>Olive <span class="olive-sub-menu"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div onclick="boxEventHandler(event,'second-box-pair')" id="second-box-pair"
+            class="box-item active-item-box active-item-box-overflow">
+            <section>
+                <input type="radio" checked>
+                <div class="pair-text">
+                    <p>2 Pair</p>
+                    <p>DDK 345.00</p>
+                </div>
+                <p class="not-valid-text"><s>DDK 195.00</s></p>
+                <div class="most-popular">
+                    <p>Most Popular</p>
+                    <p>40% OFF</p>
+                </div>
+            </section>
+            <section class="second-section active-section-box">
+                <div>
+                    <p></p>
+                    <p>#1</p>
+                    <p>#2</p>
+                </div>
+                <div>
+                    <p>Size</p>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>S</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="firstSizeHandler(event)">
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                            <p>XL</p>
+                            <p>XXL</p>
+                        </div>
+                    </div>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>S</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="secondSizeHandler(event)">
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                            <p>XL</p>
+                            <p>XXL</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Colour</p>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>Colour</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="firstColorHandler(event)">
+                            <p>Red <span class="red-sub-menu"></span></p>
+                            <p>Blue <span class="blue-sub-menu"></span></p>
+                            <p>Navy <span class="navy-sub-menu"></span></p>
+                            <p>Olive <span class="olive-sub-menu"></span></p>
+                        </div>
+                    </div>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>Colour</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="secondColorHandler(event)">
+                            <p>Red <span class="red-sub-menu"></span></p>
+                            <p>Blue <span class="blue-sub-menu"></span></p>
+                            <p>Navy <span class="navy-sub-menu"></span></p>
+                            <p>Olive <span class="olive-sub-menu"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div onclick="boxEventHandler(event,'third-box-pair')" id="third-box-pair" class="box-item">
+            <section>
+                <input type="radio">
+                <div class="pair-text">
+                    <p>3 Pair</p>
+                    <p>DDK 528.00</p>
+                </div>
+                <div>
+                    <p class="fifty-percent-off">60% OFF</p>
+                </div>
+            </section>
+            <section class="second-section">
+                <div>
+                    <p></p>
+                    <p>#1</p>
+                    <p>#2</p>
+                </div>
+                <div>
+                    <p>Size</p>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>S</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="firstSizeHandler(event)">
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                            <p>XL</p>
+                            <p>XXL</p>
+                        </div>
+                    </div>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>S</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="secondSizeHandler(event)">
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                            <p>XL</p>
+                            <p>XXL</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Colour</p>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>Colour</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="firstColorHandler(event)">
+                            <p>Red <span class="red-sub-menu"></span></p>
+                            <p>Blue <span class="blue-sub-menu"></span></p>
+                            <p>Navy <span class="navy-sub-menu"></span></p>
+                            <p>Olive <span class="olive-sub-menu"></span></p>
+                        </div>
+                    </div>
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
+                        <span>Colour</span>
+                        <span class="arrow-span"></span>
+                        <div class="custome-size-select-menu" onclick="secondColorHandler(event)">
+                            <p>Red <span class="red-sub-menu"></span></p>
+                            <p>Blue <span class="blue-sub-menu"></span></p>
+                            <p>Navy <span class="navy-sub-menu"></span></p>
+                            <p>Olive <span class="olive-sub-menu"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="total-amount">
+            <p>Free 2 Day Shipping</p>
+            <p>Total : DDK 360.00</p>
+        </div>
+        <div>
+            <button onclick="addToCartSubmitHandler(event)">
+                + Add to Cart
+            </button>
+            <p>© Powered by Pumper</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
